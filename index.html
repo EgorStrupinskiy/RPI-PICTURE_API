@@ -23,69 +23,24 @@
     <div class="container">
       <div class="header__inner">
         <div class="header__text">
-          <h1>
-            <span>N</span>umbers <span>A</span>PI
-          </h1>
+            <span>P</span>icture <span>I</span>n <span>P</span>icture <span>API</span>
         </div>
 
       </div>
     </div>
   </header>
 
-
-  <div class="api__container">
-    <div class="input__content" id="content2">
-      <form id="input_form" id="search-form">
-        <div class="form_radio_group">
-          <div class="form_radio_group-item">
-            <input id="radio-1" type="radio" name="radio" value="1" checked>
-            <label for="radio-1">Date</label>
-          </div>
-          <div class="form_radio_group-item">
-            <input id="radio-2" type="radio" name="radio" value="2">
-            <label for="radio-2">Year</label>
-          </div>
-          <div class="form_radio_group-item">
-            <input id="radio-3" type="radio" name="radio" value="3">
-            <label for="radio-3">Trivial</label>
-          </div>
-          <div class="form_radio_group-item">
-            <input id="radio-4" type="radio" name="radio" value="4">
-            <label for="radio-4">Math</label>
-          </div>
-        </div>
-        <div class="text-field">
-          <label class="text-field__label" for="login">Number</label>
-          <input class="text-field__input" type="number" name="number" id="number" placeholder="Login" value="25">
-        </div>
-        <div>
-          <button class="submit_button" type="submit">Search</button>
-        </div>
-      </form>
-    </div>
-  </div>
-
   <div class="api__container">
 
     <div id="content" class="api__content">
+      <div class = "video">
+        <video class="source__video" id = "video" controls = true src="assets/video/neo.mp4" alt="loading error">
+      </div>
 
-      <div id="date" class="header__date"></div>
-      <div class="api__text">
-        <h1 id="api__title" class="api__content__title"></h1>
-        <p id="api__description" class="api__content__description"></p>
+      <div class = "controlbar" id = "controlbar">
+        <button class="submit_button" id = "button" type="submit">Toggle picture in picture</button>
       </div>
     </div>
-
-
-    <section id="content-error" class="content content__error">
-      Nothing found
-    </section>
-    <section id="content-connection-error" class="content content__error">
-      Connection error
-    </section>
-    <section id="content-loader" class="content content__loader">
-      <div class="content__spinner"></div>
-    </section>
   </div>
 </body>
 
